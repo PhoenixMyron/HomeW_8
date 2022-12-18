@@ -10,6 +10,12 @@
 
 void InputMatrix(int[, ] matrix)
 {
+    if (matrix.GetLength(0) == matrix.GetLength(1) )
+    {
+        Console.Write("Размеры матрицы не должны быть одинаковыми. \nВведите размеры матрицы: ");
+        int[] size = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray();
+        matrix = new int[size[0], size[1]];
+    }
 for (int i = 0; i < matrix.GetLength(0); i++)
     {
     for (int j = 0; j < matrix.GetLength(1); j++)
