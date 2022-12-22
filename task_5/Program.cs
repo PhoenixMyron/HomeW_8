@@ -5,23 +5,6 @@
 // 11 16 15 06
 // 10 09 08 07
 
-// void PrintMatrix(int[,] matr)
-// {
-//     for (int i = 0; i < matr.GetLength(0); i++) 
-// {
-//     for (int j = 0; j < matr.GetLength(1); j++) 
-//     {
-//         Console.Write($"{matr[i, j]} \t");
-//     }
-//   Console.WriteLine();
-// }
-// }
-// Console.Clear();
-// Console.Write("Введите размеры матрицы: ");
-// int[] size = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray();
-// int[, ] matrix = new int[size[0], size[1]];
-
-// PrintMatrix(matrix);
 Console.Clear();
 Console.Write("Enter matrix size n and m via space: ");
 string[] numbers = Console.ReadLine().Split(" ");
