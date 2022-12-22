@@ -40,7 +40,7 @@ void PrintArray(int[,] matr)
 }
 
 
-void ChangeRows(int[, ] matrix)
+void FindMinRow(int[, ] matrix)
 {
     int sum = int.MaxValue;
     int index = 0;
@@ -65,4 +65,4 @@ Console.Write("Введите размеры матрицы: ");
 int[] size = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray();
 int[, ] matrix = new int[size[0], size[1]];
 InputMatrix(matrix);
-ChangeRows(matrix);
+FindMinRow(matrix);
